@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum | Musikkk og drill</title>
+    <link rel="shortcut icon" href="./images/rounded.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/forum.css">
+    <link rel="stylesheet" href="./stylesheets/core.css">
+</head>
+<body>
+    <%- include('./modules/header'); %>
+    <div class="content">
+        <span class="title">Ofte stilte spørsmål</span>
+
+        <div class="selectors">
+            <button onclick="document.getElementsByClassName('musicsection')[0].scrollIntoView({behavior:'smooth',block:'start'})" class="musikk rounded-white">For musikk</button>
+            <button onclick="document.getElementsByClassName('drillsection')[0].scrollIntoView({behavior:'smooth',block:'start'})"" class="drill rounded-white">For drill</button>
+        </div>
+
+        <div class="FAQ">
+
+            <div class="divider general"><span>Generelt</span><div class="line"></div></div>
+            
+            <div class="wrapper">
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvorfor skal jeg søke 3. Gardekompani?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+                
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hva er lueløp?</span>
+                        <span class="answer">
+                            Lueløp (eller mestringsløp) er en mestringsøvelse som alle rekrutter
+                             i garden må igjennom før man blir gardister. Lueløpet består av en rekke 
+                             harde fysiske øvelser over lengre tid, med lite mat og søvn. Målet med lueløpet 
+                             er at man skal kjenne på hvordan det er å være langt nede, og lære hvor mye kroppen 
+                             egentlig tåler. Lueløpet er klare sikkerhetsrammer da det ikke går ut over egen helse 
+                             og sikkerhet.
+                        </span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan kommer jeg inn?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hva er sluttet orden (SLO)?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="divider musicsection"><span>For musikk</span><div class="line"></div></div>
+            <div class="wrapper">
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan er hverdagen som musikkgardist?</span>
+                        <span class="answer">
+                            Hverdagen til en musikkgardist er veldig varierende ut i fra når i tjenesten 
+                            man er i. Hovedsakelig består hverdagen av utdanning innenfor sluttet orden (SLO), musikk og fysisk 
+                            fostring (fyfo), i tillegg til egentrening- og øving. Tjenesten er hovedsakelig delt i to, konsertsesong og 
+                            marsjsesong. Konsertsesongen er den første delen av tjenesten består av utdanning i hverdagen samt løsing av diverse
+                            konsert- og signaloppdrag. På vår- og sommerhalvåret starter drillsesongen hvor kompaniet går diverse vaktparader, har 
+                            drilloppvisninger og turneer…
+                        </span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="section">
+                        <span class="question">Når skal jeg søke?</span>
+                        <span class="answer">Nei.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan blir man musikkgardist?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Når sender man søknad?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan fungerer prøvespill?</span>
+                        <span class="answer">
+                            Prøvespill gjennomføres ved at man spiller utvalgte stykker av
+                            forsvaret og et selvvalgt stykke. De siste årene etter koronapandemien har prøvespill 
+                            blitt gjennomført over nett hvor man sender inn en video av prøvespillet. Tidligere år derimot har 
+                            prøvespill blitt gjennomført med fysisk oppmøte i disse byene Oslo, Hamar, Bergen, Kristiansand, Stavanger, 
+                            Trondheim, Bodø/Tromsø og Ålesund (forsvaret dekker alle reisekostnader).
+                        </span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="section">
+                        <span class="question">Rekker man studiestart etter endt tjeneste?</span>
+                        <span class="answer">Nei.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Kan man angre søknaden?</span>
+                        <span class="answer">Det er ikke mulig å endre på innsendt søknadsskjema. Eventuelle endringer må du sende på e-post: fpvs.kontakt@mil.no.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvem ser på prøvespillet mitt?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hva er kravene på sesjon for å komme inn?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Når er innrykk?</span>
+                        <span class="answer">Innrykk er i slutten av september.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">   
+                        <span class="question">Hvordan forbereder man seg på prøvespill?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider drillsection"><span>For drill</span><div class="line"></div></div>
+            <div class="wrapper">
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan bli drillgardist?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="section">
+                        <span class="question">Rekker man studiestart etter endt tjeneste?</span>
+                        <span class="answer">Nei.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hva er de fysiske kravene for drilltroppen?</span>
+                        <span class="answer">Nei</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hva er høydekravet for å komme inn?</span>
+                        <span class="answer">Høydekravet for å komme inn i drilltroppen er 170 cm</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvilke egenskaper søker de i drilltroppen?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan er hverdagen til en drillgardist?</span>
+                        <span class="answer">
+                    
+                        </span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvor mange kommer inn?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="section">
+                        <span class="question">Hvordan foregår selekteringen?</span>
+                        <span class="answer">Fordi du er trash.</span>
+                        <button onclick="toggleDropDown(this.closest('.section'))" class="expand"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./javascripts/forum.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <%- include('./modules/components.ejs'); %> 
+
+</body>
+</html>
