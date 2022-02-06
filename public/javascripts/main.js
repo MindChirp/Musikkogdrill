@@ -304,14 +304,14 @@ function fadeToSubPage(subsite) {
         position: absolute;
     `;
 
-    document.body.appendChild(fadeModal);
+    //document.body.appendChild(fadeModal);
 
     setTimeout(()=>{
         window.location = subsite;
         setTimeout(()=>{
-            fadeModal.parentNode.removeChild(fadeModal)
+            //fadeModal.parentNode.removeChild(fadeModal)
         }, 100)
-    }, 500)
+    }, 0)
 
 }
 
