@@ -23,7 +23,7 @@ body {
 }
 
 body.compact .top-part {
-  height: 60vh;
+  height: 80vh;
 }
 
 .top-part > .jumbotron {
@@ -192,7 +192,7 @@ body.compact .top-part > .page-title {
 }   
 
 /*Hide in compact mode*/
-body.compact #nav-bar .right {
+body.compact #nav-bar .right button:not(.about){
   display: none;
 }
 
@@ -247,8 +247,15 @@ body.compact #nav-bar .right {
 }
 
 body.compact .content > .links > div.wrapper {
-  
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
 }
+
+body:not(.compact) .content > .links > div.wrapper > .pill.apply {
+  display: none;
+}
+
 
 
 

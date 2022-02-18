@@ -1,0 +1,63 @@
+body {
+    background: white;
+    height: fit-content;
+    width: 100%;
+}
+
+.modal {
+    height: 100vh;
+    width: 100%;
+}
+
+.modal .box {
+    width: 80%;
+    height: 70vh;
+    background: #344D6C;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.modal .box span.title {
+    font-size: calc(var(--jumbo) - 2rem);
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+body.compact .modal .box span.title {
+    font-size: var(--jumbo);
+}
+
+.modal .box form {
+    width: fit-content;
+    margin: auto;
+    display: block;
+}
+
+.modal .box form input {
+    width: calc(50% - 1rem);
+    margin-right: 0.5rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    min-width:10rem;
+    margin-top: 1rem;
+}
+
+.modal .box form button.signIn {
+    font-size: 0.8rem;
+    display:block;
+    margin-top: 1rem;
+    
+}
+
+
+

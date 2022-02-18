@@ -22,4 +22,12 @@ router.get("/soek", function(req, res) {
   res.render("apply");
 })
 
+router.get("/adm-login", function(req, res) {
+  res.render("signin");
+})
+
+router.post("/adm-login", function(req, res) {
+  
+})
+
 module.exports = router;
